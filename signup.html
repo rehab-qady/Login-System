@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="container my-5 text-center ">
+        <div class="box w-75 m-auto mt-5 p-5">
+          <h1>Smart Login System</h1>
+     
+              <input type="text"
+              id="signupName"
+              placeholder="Enter Your Name"
+              class="form-control mb-3 text-white"
+
+              >
+              <p class="text-danger d-none " id="errorName">name start with capital letter & contain at least 5 letter </p>
+            <input
+              id="signupEmail"
+              type="text"
+              class="form-control mb-3 text-white"
+              name="YourEmail"
+              placeholder="Enter Your Email"
+            
+            />
+            <p class="text-danger d-none" id="errorEmail">invalid Email</p>
+            <input
+             id="signupPassword"
+              type="password"
+              class="form-control mb-3 text-white"
+              name="yourPass"
+              placeholder="Enter Your Password"
+             
+            />
+            <p class="text-danger d-none" id="errorPass">invalid Password</p>
+                
+            <p id="exist"></p>
+            
+
+            <button type="submit" class="signUp mb-3 btn btn-outline-info w-100" onclick="getData()">
+              Sign Up
+            </button>
+            <button type="submit" class="signUp mb-3 btn btn-outline-success w-100 d-none" id="signin" onclick="goToSignIn()" > Sign In</button>
+        
+          <p class="text-white">
+              You have an account? <a href="login.html" class="text-white">Sign in</a>
+          </p>
+        </div>
+    </div>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/index.js"></script>
+</body>
+</html>
